@@ -22,7 +22,7 @@ void	*ft_calloc(size_t count, size_t size)
 	buffer = malloc(bytes);
 	if (size >= SIZE_MAX)
 		return (0);
-	if (buffer != '\0')
+	if (buffer)
 	{
 		b = buffer;
 		while (bytes--)
