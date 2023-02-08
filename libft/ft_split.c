@@ -1,3 +1,5 @@
+#include "libft.h"
+
 int beam(char x, char ch)
 {
     if (x != ch)
@@ -66,7 +68,10 @@ char    **ft_split(char const *s, char c)
     if (!drevo)
         return (0);
     drevo[count] = 0;
-    while (i++ < count)
-        drevo[i] = cutter(&s, c);
+    while (i < count)
+{
+	drevo[i] = cutter(&s, c);
+	i++;
+}
     return (drevo);
 }
